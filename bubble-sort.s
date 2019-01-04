@@ -1,10 +1,10 @@
-		        .text
+	    .text
             .global _start
             
 _start:
 
 START:		
-			      LDR 	R4, =TEST_NUM	 
+	    LDR 	R4, =TEST_NUM	 
             LDR		R4, [R4]		 
             
 RESET:      MOV 	R0, #0			
@@ -13,10 +13,10 @@ RESET:      MOV 	R0, #0
             CMP		R0, #1	
             BEQ		RESET		
             
-SORT:		    LDR		R3,	=TEST_NUM	 
-		      	ADD		R3, #4			 
+SORT:	    LDR		R3,=TEST_NUM	 
+	    ADD		R3, #4			 
 LOOP:       LDR		R1, [R3]		
-		      	LDR		R2, [R3, #4]	 
+	    LDR         R2, [R3, #4]	 
             ADD		R3, #4			 
             CMP 	R1, R2			
             PUSH	{LR}			
