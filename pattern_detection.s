@@ -65,12 +65,8 @@ LOOP_ALT:   ASR		R2, R10, #1
 
 END_ALT:  	MOV 	PC, LR
            
-TEST_NUM:	  .word 0x78efac54
-			      .word 0x87654321
-            .word 0x89898989
-            .word 0xacebdf12
-            .word 0x00000000
-            .word 0x45ea3219
+TEST_NUM:
+	    .word 0x12345678
             .word 0x55567775
             .word 0xeeeeaaaa
             .word 0xffffffff
